@@ -1,10 +1,9 @@
-package tasks;
+package starter.tasks;
 
 import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 import net.serenitybdd.screenplay.rest.interactions.Post;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
@@ -23,7 +22,6 @@ public class SignUp implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.can(   CallAnApi.at("http://localhost:5000"));
         actor.attemptsTo(
                 Post.to("/api/users").with(
                         requestSpecification -> requestSpecification

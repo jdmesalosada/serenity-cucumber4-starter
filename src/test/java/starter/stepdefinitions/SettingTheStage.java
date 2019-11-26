@@ -19,7 +19,7 @@ public class SettingTheStage {
     public void setTheStage() {
         OnStage.setTheStage(
                 /*You can also use the whereEveryoneCan method to provide additional abilities, e.g.
-                This will provide actors who can both use WebDriver tasks and RestAssured tasks.
+                This will provide actors who can both use WebDriver starter.tasks and RestAssured starter.tasks.
                 Reference: https://serenity-bdd.github.io/theserenitybook/latest/screenplay-selenium-tasks.html
                  */
                 OnlineCast.whereEveryoneCan(
