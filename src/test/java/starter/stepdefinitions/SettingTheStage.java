@@ -23,7 +23,7 @@ public class SettingTheStage {
                 Reference: https://serenity-bdd.github.io/theserenitybook/latest/screenplay-selenium-tasks.html
                  */
                 OnlineCast.whereEveryoneCan(
-                        CallAnApi.at("http://my.server.endpoint")
+                        CallAnApi.at("http://localhost:5000")
                 )
         );
     }
