@@ -45,6 +45,10 @@ dependencies {
             libs.test.serenity.cucumber,
             libs.test.junit,
             libs.test.assertj
+
+    // https://mvnrepository.com/artifact/net.serenity-bdd/serenity-screenplay-rest
+    compile group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version: '2.0.88'
+
 }
 
 test {
